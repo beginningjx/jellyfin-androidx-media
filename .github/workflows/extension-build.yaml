@@ -38,3 +38,10 @@ jobs:
         run: ./build.sh
       - name: Build extension and publish library locally
         run: ./gradlew :media3-ffmpeg-decoder:publishToMavenLocal
+        
+      # 新增步骤：上传构建产物
+      - name: Upload local Maven repository artifacts
+        uses: actions/upload-artifact@0b7f8abb97282b04f3237599026778f5f40f0c03 # v4.3.4
+        with:
+          name: media3-ffmpeg-decoder-package
+          path: ~/.m2/repository/androidx/media3/media3-ffmpeg-decoder/
