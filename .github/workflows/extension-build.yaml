@@ -44,4 +44,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: media3-ffmpeg-decoder-package
-          path: ./media3-ffmpeg-decoder/
+          path: ~/.m2/repository/
