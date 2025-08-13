@@ -6,6 +6,7 @@ on:
       - v*
     branches:
       - master
+  workflow_dispatch:
 
 env:
   NDK_VER: 26.1.10909125
