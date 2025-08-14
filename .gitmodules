@@ -1,9 +1,0 @@
-[submodule "media"]
-	path = media
-	url = https://github.com/androidx/media.git
-	branch = release
-	commit = c35a9d62baec57118ea898e271ac66819399649b
-[submodule "ffmpeg"]
-	path = ffmpeg
-	url = https://git.ffmpeg.org/ffmpeg.git
-	branch = release/6.0
